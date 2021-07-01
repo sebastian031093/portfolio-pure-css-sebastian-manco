@@ -348,6 +348,15 @@ img{
     transition: .3s;
 }
 
+.button--white{
+    background-color: #fff;
+    color: var(--first-color);
+}
+
+.button--white:hover{
+    background-color: #fff;
+}
+
 .button--flex{
     display: inline-flex;
     align-items: center;
@@ -706,6 +715,95 @@ img{
 .active-modal{
     opacity: 1;
     visibility: visible;
+}
+
+/*======================= PORTFOLIO ========================*/
+.porfolio__container{
+    overflow: initial;
+}
+
+.portfolio__content{
+    padding: 0 1.4rem;
+}
+
+.portfolio__img{
+    width: 265px;
+    border-radius: .8rem;
+    justify-self: center;
+}
+
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon{
+    transform: translateX(.4rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-porfolio-icon{
+    font-size: 3.2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -.8rem;
+}
+
+.swiper-button-next{
+    right: -.8rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -4rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+    outline: none;
+}
+
+/*========== PROJECT IN MIND ==============*/
+.project{
+    text-align: center;
+}
+
+.project__bg{
+    background-color: var(--first-color-second);
+    padding-top: 4.8rem;
+}
+
+.project__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+    margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description{
+    color: #FFF;
+}
+
+.project__img{
+    width: 232px;
+    justify-self: center;
 }
 
 /*============= Active link */
