@@ -963,6 +963,35 @@ img{
 }
 
 
+/* SCROLL UP */
+.scrollup{
+    position: fixed;
+    right: 1.6rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    opacity: .8;
+    padding: 0 0.48rem;
+    border-radius: 0.64rem;
+    z-index: var(--z-tooltip);
+    transition: .8s;
+}
+
+.scrollup:hover{
+    background-color: var(--first-color-alt);
+}
+
+.scrollup__icon{
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+/* Show scroll */
+.show-scroll{
+    bottom: 8rem;
+}
+
+
+/* Dark light theme */
 
 
 /*============= Change background header */

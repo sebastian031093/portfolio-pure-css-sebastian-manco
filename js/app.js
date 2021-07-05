@@ -61,10 +61,13 @@ skillsHeader.forEach((elemtn) =>{
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')
 
+console.log(tabs);
+console.log(tabContents);
+
 tabs.forEach( tab => {
     tab.addEventListener('click', () =>{
         const target = document.querySelector(tab.dataset.target)
-
+        console.log(target);
         tabContents.forEach(tabContent => {
             tabContent.classList.remove('qualification__active')
         });
@@ -166,10 +169,11 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+
 /*==================== SHOW SCROLL TOP ====================*/ 
-function scrollTop(){
-    const scrollTop = document.getElementById('scroll-top');
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 80) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
-window.addEventListener('scroll', scrollTop)
+window.addEventListener('scroll', scrollUp)
